@@ -1,0 +1,17 @@
+/* Final layout overrides */
+body { background: #fff; }
+.paper-figure { background: #fff; }
+.paper-figure img { display: block; width: 100%; height: auto; margin: 0 auto; }
+.paper-figures { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 28px; margin: 34px auto 0; text-align: center; }
+.paper-figures figure { flex: 1 1 420px; max-width: 560px; margin: 0 auto; }
+.paper-figures img { display: block; width: 100%; height: auto; margin: 0 auto; }
+.paper-figures figcaption { margin-top: 10px; color: #68766e; font-size: 12px; }
+.results-figures { max-width: 1160px; padding: 0 44px 70px; }
+.abstract-full { max-width: 1000px; margin: 0 auto; text-align: left; }
+.abstract-full h2 { margin-bottom: 20px; }
+.abstract-full p { color: var(--muted); font-size: 16px; line-height: 1.95; }
+.abstract-full + .paper-figures { display: block; max-width: 1100px; }
+.abstract-full + .paper-figures figure { max-width: 1000px; margin: 0 auto 42px; }
+.abstract-full + .paper-figures figure:first-child img { width: 56.25%; }
+.abstract-full + .paper-figures figure:last-child img { width: 80%; }
+.abstract-full + .paper-figures figure:last-child { margin-bottom: 0; }
