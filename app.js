@@ -40,8 +40,18 @@ Object.assign(zh, {
   "challengeNote": "0–2 源套件含 63 条混音；0–3 源套件含 168 条。均为 EXP6 / ep48，采用每格中位数后平均。Full 为全部语音源入选，Partial 为部分入选，Empty 为没有入选源。目标保留混响语音，但不含外加噪声；纯噪声样本不定义语音 SNR。SI-SDRi 较大不一定代表输出绝对质量更好。",
   "provenanceBody": "这些数值由已保存的验证结果重算；本次网页修订没有重新推理。初稿带噪结果与之明显不同，原始生成管线仍待确认，不能仅凭差异断言原因。下方密集半径扫描是另一组混音，不是与此表配对的对比。",
   "audioLead": "比较输入与 1/2/3/4 m 四档预计算输出。这些是已保存的试听样例，不是在浏览器中实时运行模型。",
-  "resourcePaperNote": "原始初稿 · 图表与结果仍有已知差异",
-  "resourceProvenanceNote": "随站点提供的来源记录 · 核查范围见 README"
+  "draftNote": "ICASSP 2027 论文稿 · Biao Dong 等 · 哈尔滨工业大学 / 中国联通",
+  "paperAction": "阅读论文稿",
+  "metricSource": "论文报告值：29.25 dB SI-SDR、4.40 dB SI-SDRi、62.01 dB attenuation、0.46% RCE。",
+  "ablationTitle": "消融实验",
+  "manuscriptTag": "论文表 1",
+  "comparisonCaption": "论文消融表中的报告值。",
+  "ablationNote": "数值直接对应论文消融表。连续半径编码与跨半径一致性联合使用时，在所有指标上取得最佳结果。",
+  "verifiedTag": "论文表 2",
+  "challengeNote": "数值直接对应论文泛化实验表。增加说话人数量和加入噪声会降低提取质量并提高 RCE。",
+  "resourcePaperNote": "ICASSP 2027 论文稿 · 当前本地版本",
+  "resourceProvenanceNote": "随站点提供的实验来源记录",
+  "citationNote": "Biao Dong、Jie Chen、Jianwei Fang、Wei Xiao、Jiqing Han、Yongjun He · 哈尔滨工业大学 / 中国联通 · ICASSP 2027 论文稿。"
 });
 const en = {input:'Original input',output:'Model output',target:'Target speakers',level:'Output level',delta:'Step change',sources:'Source distances',none:'No speech source',outside:'outside plot range',sample:'Sample',profile:'Profile',radius:'Query radius',noExamples:'Audio data unavailable. Check assets/data/audio.js.',fullCategory:'Full-target preservation',partialCategory:'Partial-target extraction',emptyCategory:'Empty-target rejection',threeCategory:'Three-speaker mixture',noisyCategory:'10 dB noisy mixture',waveNote:'Waveform scale shared with this input',audioFailure:'Audio unavailable. Check deployed files.'};
 const $=id=>document.getElementById(id); const initial={};
